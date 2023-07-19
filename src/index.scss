@@ -1,0 +1,75 @@
+@font-face {
+  font-family: "Poppins Regular";
+  font-style: normal;
+  font-weight: normal;
+  src: local("Poppins Regular"), url("./asset/font/Poppins-Regular.woff") format("woff");
+}
+
+@font-face {
+  font-family: "Poppins Light";
+  font-style: normal;
+  font-weight: normal;
+  src: local("Poppins Light"), url("./asset/font/Poppins-Light.woff") format("woff");
+}
+
+@font-face {
+  font-family: "Poppins Medium";
+  font-style: normal;
+  font-weight: normal;
+  src: local("Poppins Medium"), url("./asset/font/Poppins-Medium.woff") format("woff");
+}
+@font-face {
+  font-family: "Poppins Bold";
+  font-style: normal;
+  font-weight: normal;
+  src: local("Poppins Bold"), url("./asset/font/Poppins-Bold.woff") format("woff");
+}
+@font-face {
+  font-family: "Poppins Black";
+  font-style: normal;
+  font-weight: normal;
+  src: local("Poppins Black"), url("./asset/font/Poppins-Black.woff") format("woff");
+}
+
+* {
+  box-sizing: border-box;
+  padding: 0;
+  margin: 0;
+}
+html {
+  font-size: 62.5%; /* 1rem = 10px */
+}
+
+:root {
+  --primary-color: #facb32;
+  --bg-color: #1a1a1a;
+  --text-color: rgba(255, 255, 255, 0.829);
+}
+
+body {
+  background-color: var(--bg-color);
+  color: var(--text-color);
+  font-family: "Poppins Light";
+  -webkit-font-smoothing: antialiased;
+  -moz-osx-font-smoothing: grayscale;
+}
+section {
+  display: flex;
+  margin: auto;
+  width: 100%;
+  min-height: 100vh;
+  justify-content: center;
+  align-items: center;
+}
+body::-webkit-scrollbar {
+  width: 0.3em;
+}
+
+body::-webkit-scrollbar-track {
+  box-shadow: inset 0 0 6px rgba(0, 0, 0, 0.3);
+}
+
+body::-webkit-scrollbar-thumb {
+  background-color: darkgrey;
+  outline: 1px solid slategrey;
+}

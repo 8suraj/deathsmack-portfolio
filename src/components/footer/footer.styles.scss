@@ -1,0 +1,116 @@
+.footer {
+  display: flex;
+  flex-direction: row;
+  justify-content: space-around;
+  align-items: center;
+
+  &__contact,
+  &__copyright {
+  }
+  &__social {
+    transform: translateX(-15%);
+    background-color: transparent;
+    cursor: pointer;
+    display: flex;
+    flex-direction: row;
+    justify-content: center;
+    align-items: center;
+    gap: 2rem;
+    ul {
+      padding: 2rem;
+      display: flex;
+      justify-content: space-between;
+      align-items: center;
+      flex-grow: 1;
+    }
+    ul li {
+      padding: 0 2rem;
+      list-style: none;
+      text-decoration: none;
+      display: flex;
+      justify-content: space-around;
+      align-items: center;
+    }
+  }
+}
+
+.anchor {
+  color: #fff;
+  text-decoration: none;
+  font-size: 1rem;
+  letter-spacing: 0.2rem;
+  transition: ease-in-out 0.2s;
+  justify-content: space-evenly;
+  &--1 {
+    font-size: 1.6rem;
+  }
+  &:hover {
+    color: var(--primary-color);
+    scale: 1.3;
+    transition: ease-in-out 0.2s;
+  }
+  &:active {
+    color: var(--primary-color);
+    scale: 1.3;
+  }
+}
+@import "../../variable.scss";
+@include respond(tab-port) {
+  .footer {
+    display: flex;
+    flex-direction: column;
+    justify-content: space-around;
+    margin: 2rem;
+    font-size: 2rem;
+
+    &__contact,
+    &__copyright {
+      display: flex;
+      flex-direction: row;
+      gap: 1rem;
+      // font-size: 1.8rem;
+    }
+    &__copyright {
+      padding-bottom: 2rem;
+    }
+    &__social {
+      order: 1;
+      transform: translateX(0);
+    }
+    &__contact {
+      order: 2;
+      display: flex;
+      flex-direction: column;
+      align-items: center;
+      justify-content: center;
+      padding: 1rem;
+      br {
+        display: none;
+      }
+    }
+    &__copyright {
+      order: 3;
+    }
+  }
+
+  .anchor {
+    color: #fff;
+    text-decoration: none;
+    font-size: 1.3rem;
+    letter-spacing: 0.2rem;
+    transition: ease-in-out 0.2s;
+    justify-content: space-evenly;
+    &--1 {
+      font-size: 2.4rem;
+    }
+    &:hover {
+      color: var(--primary-color);
+      scale: 1.1;
+      transition: ease-in-out 0.2s;
+    }
+    &:active {
+      color: var(--primary-color);
+      scale: 1.1;
+    }
+  }
+}

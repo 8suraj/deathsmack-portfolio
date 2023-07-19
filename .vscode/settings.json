@@ -1,0 +1,16 @@
+{
+  "editor.formatOnSave": true,
+
+    "editor.defaultFormatter": "esbenp.prettier-vscode",
+  
+    "editor.codeActionsOnSave": {
+      "source.fixAll.eslint": true,
+      "source.fixAll.format": true
+    },
+    "[scss]": {
+      "editor.defaultFormatter": "sibiraj-s.vscode-scss-formatter"
+    },
+    "[javascriptreact]": {
+      "editor.defaultFormatter": "vscode.typescript-language-features"
+    }
+  }

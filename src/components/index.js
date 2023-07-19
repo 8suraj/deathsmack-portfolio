@@ -1,0 +1,11 @@
+export { default as Navbar } from './navbar/navbar.component';
+export { default as AboutMe } from './aboutMe/aboutMe.component';
+export { default as Footer } from './footer/footer.component';
+export { default as Contact } from './contact/contact.component';
+export { default as Services } from './services/services.components';
+export { default as HomeHero } from './hero/hero.components';
+export { default as HomeHero1 } from './hero1/hero.components';
+export { default as WhatIDo } from './whatIDo/whatIDo.components';
+export { default as CreativeDisplay } from './creativeDisplay/creativeDisplay.components';
+export { default as CreativeVideoDisplay } from './creativeVideoDisplay/creativeVideoDisplay.components';
+export { Header1, Header2 } from './header/header.components';

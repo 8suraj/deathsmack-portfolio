@@ -1,0 +1,27 @@
+.portfolio {
+    background: url(../../asset/background/portbg.png) no-repeat center center fixed;
+    // opacity: 0.9;
+    -webkit-background-size: cover;
+    -moz-background-size: cover;
+    -o-background-size: cover;
+    background-size: cover;
+    border: 1px solid black;
+}
+@import "../../variable.scss";
+// @include respond(tab-port) {
+//  background: url(./portbgPhone.png) no-repeat center center fixed;
+// }
+@include respond(phone) {
+    .portfolio {
+        background: url(../../asset/background/portbgPhone.png) no-repeat center center fixed;
+        background-size: contain;
+        -webkit-background-size: contain;
+    }
+}
+@media only screen and (max-width: 425px) {
+    .portfolio {
+        background: url(../../asset/background/portbgPhone.png) no-repeat center center fixed;
+        background-size: contain;
+        -webkit-background-size: contain;
+    }
+}

@@ -1,0 +1,85 @@
+.services {
+    &__container {
+        width: 100%;
+        max-width: 75%;
+        margin: auto;
+        display: flex;
+        flex-direction: column;
+        justify-content: center;
+    }
+    &__body {
+        display: grid;
+        grid-template-columns: 4fr 4fr 4fr;
+        margin: auto;
+        align-items: center;
+        &--item {
+            display: flex;
+            flex-direction: column;
+            justify-content: center;
+            height: 15rem;
+            cursor: pointer;
+            margin: auto;
+            align-items: center;
+
+            &-head {
+                text-transform: uppercase;
+                width: 29.8rem;
+                height: 6.4rem;
+                display: flex;
+                justify-content: center;
+                align-items: center;
+                position: relative;
+                z-index: -1;
+                letter-spacing: 0.3rem;
+                color: var(--primary-color);
+                text-align: center;
+                transform: translateY(4rem);
+                transition: ease-in-out 400ms;
+                font-family: "Poppins Medium";
+                font-size: 1.8rem;
+            }
+            &:hover &-head {
+                transform: translateY(0rem);
+                transition: ease-in-out 400ms;
+            }
+
+            &-para {
+                position: relative;
+                z-index: -1;
+                margin: auto;
+                transform: scale(0);
+                text-align: center;
+                transition: transform, 400ms;
+                font-size: 1.5rem;
+                font-family: "Poppins Light";
+            }
+            &:hover &-para {
+                transform: scale(1);
+                transition: 400ms;
+            }
+        }
+    }
+}
+@import "../../variable.scss";
+@include respond(tab-port) {
+    .services {
+        &__body {
+            grid-template-columns: 2fr;
+            margin-bottom: 3rem;
+        }
+        &:hover &-head {
+            transition: none;
+        }
+        &:hover &-para {
+            transition: none;
+        }
+        &:active &-para {
+            transform: scale(1);
+            transition: 400ms;
+        }
+        &:active &-head {
+            transform: translateY(0rem);
+            transition: ease-in-out 400ms;
+        }
+    }
+}
